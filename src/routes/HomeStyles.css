@@ -1,0 +1,127 @@
+
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+   padding-top: 20px;
+   margin-top: 100px;
+  }
+ 
+ .slider {
+    position: relative;
+    height: 80vh;
+    display: flex;
+margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 270px;
+    margin-right:40px;
+    margin-left:200px;
+  }
+ 
+  
+  .right-arrow {
+    position: absolute;
+    top: 70%;
+    right: 40px;
+    font-size: 3rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: contain;
+    opacity: 0.5;
+  }
+  .right-arrow:hover{
+    opacity: 1;
+  }
+  .left-arrow:hover{
+    opacity: 1;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 70%;
+    left: 220px;
+    font-size: 3rem;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.5;
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  .about{
+    margin-top: 200px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    height: fit-content;
+    border-radius: 10px;
+  }
+  .car{
+    display: flex;
+    position: relative;
+
+  }
+  @media screen and (max-width: 768px) {
+  .car{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+  }
+.loh{
+  margin: auto;
+  margin-left:9px
+}
+.image{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.left-arrow{
+  left: 2px;  
+  }
+  .right-arrow{
+    right: 2px;
+  } 
+    
+}
+
+.Home_Scene{
+  background-color:white;}
+.home{
+  background-color:rgb(237, 252, 203);
+
+}
+.bu{
+  text-decoration: none;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 1px;
+  background-color: #320a3c;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px; 
+}
+.hu{
+  padding: 2px;
+ 
+}

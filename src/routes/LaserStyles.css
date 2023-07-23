@@ -1,0 +1,28 @@
+.ti{
+    font-size: 8em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 100px;
+    color: blueviolet;
+    
+}
+.bo{
+    flex-direction: row;
+    display: flex;
+    margin: auto;
+    margin-left: 250px;
+}
+.cl{
+    width: 500px;
+}
+.laser{
+    background-color: #fcffda9e;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+.im{
+    width:90%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
