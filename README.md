@@ -1,1 +1,1 @@
-# SitaraCosmetics
+# SitaraDentoCosmetics is a cosmetic clinic
