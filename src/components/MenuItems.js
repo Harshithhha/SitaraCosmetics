@@ -43,12 +43,12 @@ export const MenuItems=[
     },
 
     
-    /*{
-        title:"Service",
-        url:"/signup",
-        cName :"nav-links",
-        icon:"fa-solid fa-briefcase"
-    }, */
+    // {
+    //     title:"Location",
+    //     url:"/Location",
+    //     cName :"nav-links",
+    //     icon:"fa-solid fa-briefcase"
+    // }, 
    
 
 ]

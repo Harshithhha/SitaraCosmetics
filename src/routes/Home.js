@@ -68,7 +68,7 @@ return(
     
       </Text>
       {MenuItems.map((item,index)=>{
-                      if (item.title!="Contact" && item.title!="Home" && item.title!="About"){
+                      if (item.title!=="Contact" && item.title!=="Home" && item.title!=="Location"){
                         return(
                       <div className="ho">
                         <ul key={index}>

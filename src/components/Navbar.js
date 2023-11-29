@@ -1,8 +1,12 @@
 import {Component} from "react";
 import {Link} from "react-router-dom";
 import { MenuItems } from "./MenuItems";
-import sitara from "../img/sitara logo.png";
 import "./NavbarCSS.css";
+import gmap from "../img/Google_Maps_logo_icon.png"
+import insta from "../img/instagram-logo.png"
+import face from "../img/logo_facebook.png"
+import wht from "../img/1499955335whatsapp-icon-logo-png.png"
+import lin from "../img/linkedIn_PNG8.png"
 class Navbar extends Component{
     state={clicked:false};
     handleClick=()=>{
@@ -20,20 +24,25 @@ this.setState({clicked:!this.state.clicked})
             <nav className="NavbarItems">
                 <div className="together">
                 <div className="another"> 
+                <a href={`https://maps.app.goo.gl/p3Z3vsHaNPwNTrLw9`} target="_blank" rel="noopener noreferrer">
+                 <img className="insta" alt="no" src={gmap} />
+                        </a>
                 <a href={`https://www.instagram.com/${this.instagramUsername}`} target="_blank" rel="noopener noreferrer">
-                <img className="insta" alt="no" src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_1280.png"/>
+                <img className="insta" alt="no" src={insta}/>
                 </a>
                 <a href={`https://www.facebook.com/sitaracosmeticshyd?mibextid=ZbWKwL`} target="_blank" rel="noopener noreferrer">
-                         <img className="insta" alt="no" src="https://cdn.pixabay.com/photo/2016/12/22/04/35/facebook-1924512_1280.png"/>
+                         <img className="insta" alt="no" src={face}/>
                  </a>
-                 <img className="insta" alt="no" src="https://cdn.pixabay.com/photo/2017/01/31/14/36/blue-2024619_640.png" onClick={this.handlDialClick}/>
+                 <img className="insta" alt="no" src={wht} onClick={this.handlDialClick}/>
                  <a href={`https://www.linkedin.com/in/sitara-cosmetics-b0690383/`} target="_blank" rel="noopener noreferrer">
-                         <img className="linked" alt="no" src="https://myclouddoor.com/wp-content/uploads/2019/11/Linkedin-logo.png"/>
+                         <img className="insta" alt="no" src={lin}/>
                  </a>
+                
+                
             </div>
                 <div className="void">
                     </div>    </div>
-                <h1 className="navbar-logo">Sitara Dentofacialcosmetic Clinic</h1>
+                <p className="navbar-logo">Sitara Dentofacial cosmetic Clinic</p>
                 <div className="menu-items " onClick={this.handleClick}>
                     <i className={this.state.clicked?"fas fa-times":"fas fa-bars"}></i>
                     </div>
@@ -45,7 +54,6 @@ this.setState({clicked:!this.state.clicked})
                         return(
                         <li key={index}>
                             <div className="myhome">
-
                             <Link className={item.cName} to={item.url}>
                                 <i className={item.icon}></i>
                             {item.title}

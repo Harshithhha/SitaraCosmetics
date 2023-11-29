@@ -1,4 +1,8 @@
-.image{
+.imag{
     width:750px;
     height:600px;
+    margin-left: 250px;
+}
+.left-arrow{
+    margin-bottom: auto;
 }

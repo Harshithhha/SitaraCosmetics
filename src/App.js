@@ -1,9 +1,9 @@
 import './App.css';
-import Navbar from './components/Navbar'
+
 import {Routes,Route} from "react-router-dom";
 import Home from './routes/Home';
 import Contact from './routes/Contact';
-import About from './routes/About';
+import Location from './routes/Location';
 import Hair from './routes/Hair';
 import Dental from './routes/Dental';
 import Laser from './routes/Laser';
@@ -22,6 +22,8 @@ function App() {
         <Route path="/Hair" element={<Hair/>}/>
         <Route path="/SemipermanentMakeup" element={<PermanentMakeup/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Location" element={<Location/>}/>
+
       </Routes>
       
       
