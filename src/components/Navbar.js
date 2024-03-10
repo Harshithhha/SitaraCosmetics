@@ -53,13 +53,15 @@ this.setState({clicked:!this.state.clicked})
                     {MenuItems.map((item,index)=>{
                         return(
                         <li key={index}>
+                            
                             <div className="myhome">
                             <Link className={item.cName} to={item.url}>
                                 <i className={item.icon}></i>
-                            {item.title}
+                           <div className="Route">{item.title}</div> 
                             </Link>
+                            
                             </div>
-                        </li>
+                     </li>
                         )
                     })}
                     

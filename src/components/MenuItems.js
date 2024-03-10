@@ -36,7 +36,7 @@ export const MenuItems=[
         icon:"fa-solid fa-circle-info"
     },
     {
-        title:"Contact for any queries ",
+        title:"Contact Us ",
         url:"/Contact",
         cName :"nav-links",
         icon:"fa-solid fa-address-book"
