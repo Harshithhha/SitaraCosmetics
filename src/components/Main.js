@@ -5,6 +5,7 @@ import values from "../img/Values.png"
 function Main(){
     return(
         <div className="Mastercard">
+            
             <div className="card"> <img src={vision}></img>
            </div>
            <div className="card"> <img src={mission}></img>
@@ -12,6 +13,7 @@ function Main(){
            
            <div className="card"><img src={values}></img>
            </div>
+    
         </div>
 
        )

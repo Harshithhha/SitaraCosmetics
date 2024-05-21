@@ -13,7 +13,9 @@ function PermanentMakeup(){
     let workIconStyles = { background: "#06D6A0" };
     return(<div className="permanent">
        <Navbar/>
-       <div className="titlep">Semi-Permanent Makeup</div>
+       <div></div>
+       <div className="titlep">Semi </div>
+       <div className="titleq">Permanent Makeup</div>
        <VerticalTimeline>
         {Timeline.map((element) => {
           let isWorkIcon = element.icon === "work";

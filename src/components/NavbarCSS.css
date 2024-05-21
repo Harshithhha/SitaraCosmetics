@@ -3,8 +3,8 @@
    justify-content: space-between;
    align-items: center;
    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
-   width:95%;
-   height: 130px;
+   width:103vw;
+   height: 20vh;
    position: fixed; 
    left:50%;
    flex-direction: row;
@@ -12,7 +12,11 @@
    border-radius: 13px; 
    z-index:9999;
    background-color:#ffd5df;
+   margin-left: 2px;
    
+}
+.name{
+    display: none;
 }
 .ic{
     display: inline;
@@ -24,16 +28,15 @@
    border-radius: 13px; 
    /* display: flex; */
     flex-direction: row;
-    padding: 10px;
 
 
      justify-content:flex-end ;
     align-items: flex-start; 
     position: fixed;
    box-shadow: 0 0px 15px 0 rgba(0,0,0,0.25);
-   width:100%;
+   width:100vw;
    height: 50px; 
-   margin-top: 0px;
+   margin-top: 0vh;
    align-items: center;
    left:50%;
    transform: translate(-50%);
@@ -45,10 +48,13 @@
    gap:30px;
  
 }
-/* .together{
+ .together{
     display: flex;
     flex-direction: column;
-} */
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 5%;
+} 
 img.women{
     height: 4.5rem;
     margin-top: 58%;
@@ -92,8 +98,7 @@ display: inline;
 .Route:hover{
     background-color: #8A2BE2;
     color: #fff !important;;
-    border-radius: 4px;
-    
+    border-radius: 4px;   
     transition: all 0.2s ease-in-out;
 } 
 .insta:hover.overlay {
@@ -133,26 +138,55 @@ button{
 .menu-items{
     display: none;
 }
-@media screen and (max-width:850px) and (min-width:20px){
+
+    
+
+@media screen and  (max-width:850px){
+    .myhome{
+        margin-left: -122px;
+    }
+    
+    .navbar-logo{
+        margin-left: 6vw;
+        font-size: 3vw;
+    }
+    .navbar-logo{
+        font-size: 1.5rem;}
+    .i{
+        margin-right: 100vw;
+    }
+    .together{
+        margin-top: 0px;
+    
+    }
+    .another{
+        margin-top: 12px;
+        padding:3px;
+        width:100vw;
+        margin-left: 0px;
+    }
     .NavbarItems{
         z-index: 99;
+        width:104vw;
+        height:20vh;
     }
     .nav-menu{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         background-color:#fff;
-        width: 70%;
+        width: 80%;
         height:auto;
         
         position: absolute;
         top: 0;
-        left:-100%;
+    
         opacity:0;
         margin-right: 0%;
         align-items: stretch;
-        padding:80px 0 30px 0;
-        margin:0;
+        padding:10px 0 0px 0;
+        margin-top:-40px;
+        margin-left: -75px;
        
     }
     .nav-menu.active{
@@ -177,9 +211,9 @@ text-align: center;
     .nav-links:hover{
         /* background-color:#01959a  ; */
         transition: none;
-        text-align: center;
+     
         border-radius: 13px;
-        width: 95%;
+        width: 50%;
     }
     button{
        display: none; 
@@ -214,9 +248,41 @@ text-align: center;
         margin-top: 70px;
         margin-right:40px;
      }
+    
+     .hide-item {
+       transform: translateY(calc(-100% - var(--top)));
+     }
+     .mobile-menu-icon {
+       display: block;
+     }
+     .navItems {
+       --top: 1rem;
+       transition: 0.3s ease transform;
+       background-color: var(--deep-dark);
+       padding: 2rem;
+       width: 90%;
+       max-width: 300px;
+       border-radius: 12px;
+       position: absolute;
+       right: 1rem;
+       top: var(--top);
+       .closeNavIcon {
+         display: block;
+         width: 3rem;
+         margin: 0 0 0 auto;
+         cursor: pointer;
+         * {
+           pointer-events: none;
+         }
+       }
+       li {
+         display: block;
+         margin-bottom: 1rem;
+       }
+    }   
 }
 .void{
-    width: 100px;
+    width: 0.1em;
     height: 130px;
 }
 .linked{

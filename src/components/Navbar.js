@@ -7,6 +7,8 @@ import insta from "../img/instagram-logo.png"
 import face from "../img/logo_facebook.png"
 import wht from "../img/1499955335whatsapp-icon-logo-png.png"
 import lin from "../img/linkedIn_PNG8.png"
+//import styled from "styled-components";
+import px2vw from "../utils/px2vw.js";
 class Navbar extends Component{
     state={clicked:false};
     handleClick=()=>{
@@ -42,7 +44,7 @@ this.setState({clicked:!this.state.clicked})
             </div>
                 <div className="void">
                     </div>    </div>
-                <p className="navbar-logo">Sitara Dentofacial cosmetic Clinic</p>
+                <p className="navbar-logo">Sitara Dentofacial <div class="name"></div> cosmetic Clinic</p>
                 <div className="menu-items " onClick={this.handleClick}>
                     <i className={this.state.clicked?"fas fa-times":"fas fa-bars"}></i>
                     </div>

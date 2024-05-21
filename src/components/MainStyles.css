@@ -1,14 +1,17 @@
 
+.img{
+  width:100%;
+}
 .card{
+
     width: 30%;
-    
     margin: 1.5%;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    align-items: center;
+    
     display: flex;
     flex-direction: row;
   
@@ -20,6 +23,138 @@
   .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .Mastercard{
+    display: flex;
+    flex-direction: row ;
+    margin-top:12em;
+    width: 100vw;
+    height: 50vh;
+   }
+  
+  @media screen and (max-width:850px) {
+    
+    .Mastercard{
+      
+      border-radius: 10px;  
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      margin:12px;
+      width:10%;
+  
+       }
+       .card{
+        width:10em;
+        margin-left:20vh;
+        margin-top: 10vh;
+      }
+       .card .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .card:hover .card-img {
+        filter: brightness(50%);
+      }
+      
+      .card .card-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: #fff;
+     
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .card:hover .card-content {
+        bottom: 20px;
+      }
+      
+      .card .card-content h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .card:hover .card-content h2 {
+        font-size: 1.2rem;
+      }
+      
+    
+      .card:hover .card-content h3 {
+        font-size: 0.8rem;
+      }
+      
+      .Mastercard {
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        align-items: center;
+        margin: 1px;
+        width: 100%;
+        height: auto;
+      }
+    
+      .card {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    
+      .card .card-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+    
+      .card:hover .card-img {
+        filter: brightness(50%);
+      }
+    
+      .card .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: #fff;
+    
+        transition: all 0.3s ease-in-out;
+      }
+    
+      .card:hover .card-content {
+        bottom: 20px;
+      }
+    
+      .card .card-content h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+    
+      .card:hover .card-content h2 {
+        font-size: 1.2rem;
+      }
+    
+      .card:hover .card-content h3 {
+        font-size: 0.8rem;
+      }
+
+    
+
   }
   
   .card .card-img {
@@ -65,11 +200,6 @@
     font-size: 0.8rem;
   }
   
- .Mastercard{
-  display: flex;
-  flex-direction: row;
-  margin: auto;
- }
-.body{
+ .body{
   background-color: #fff;
 }

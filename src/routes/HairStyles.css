@@ -7,14 +7,17 @@
   }
   
   .title {
-    font-size: 15em;
+    font-size: 50vw;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     padding-top: 100px;
     color: azure;
 }
+.meme{
+  height:5em;
+}
 .ptitle{
-  font-size: 10em;
+  font-size: 18vw;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   padding-top: 50px;
@@ -65,29 +68,58 @@
   .schoolButton:hover {
     background-color: #f3bc3c;
   }
-  
-  @media only screen and (max-width: 1700px) {
+  .myimg{
+    width: 570px;
+    height: 570px;
+  }
+  .prob{
+    height: 250px;
+    width: 400px;
+  }
+  @media screen and (max-width: 850px) {
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
       color: rgb(44, 44, 44);
       margin-top: 1.5em;
     }
+    .myimg{
+      width: 570px;
+      height: 370px;
+    }
+    .prob{
+      height: 150px;
+      width: 300px;
+    }
+    .nav-barlogo{
+      
+    }
   }
-  .myimg{
-    width: 570px;
-    height: 370px;
+  @media screen and (max-width: 400px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+    .myimg{
+      width: 570px;
+      height: 170px;
+    }
+    .prob{
+      height: 100px;
+      width: 300px;
+    }
   }
-  .prob{
-    height: 250px;
-    width: 400px;
-  }
+ 
+ 
   .col{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: antiquewhite;
     padding: 60px;
+    
   }
   .rob{
     color: brown;

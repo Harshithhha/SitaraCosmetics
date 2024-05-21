@@ -1,7 +1,7 @@
 a.navlink:hover{
   color: aliceblue;
 background-color: cadetblue;
-padding: 8px;
+padding: 8em;
 }
 
 .products{
@@ -10,33 +10,33 @@ padding: 8px;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
-   padding-top: 20px;
-   margin-top: 100px;
+   padding-top: 20em;
+   margin-top: 100em;
   }
  
  .slider {
     position: relative;
     height: 80vh;
     display: flex;
-margin-right: 0px;
+margin-right: 0em;
     justify-content: center;
     align-items: center;
   }
   
   .image {
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    margin-top: 270px;
-    margin-right:40px;
-    margin-left:200px;
+    width: 1900em;
+    height: 500em;
+    border-radius: 10em;
+    margin-top: 270em;
+    margin-right:40em;
+    margin-left:200em;
   }
  
   
   .right-arrow {
     position: absolute;
     top: 70%;
-    right: 40px;
+    right: 40em;
     font-size: 3rem;
     color:white;
     z-index: 10;
@@ -54,7 +54,7 @@ margin-right: 0px;
   .left-arrow {
     position: absolute;
     top: 70%;
-    left: 220px;
+    left: 220em;
     font-size: 3rem;
     color:white;
     z-index: 10;
@@ -62,9 +62,9 @@ margin-right: 0px;
     user-select: none;
     opacity: 0.5;
   }
-  /* .hi{
+   .hi{
     margin: auto;
-  } */
+  } 
   
   .slide {
     opacity: 0;
@@ -77,20 +77,23 @@ margin-right: 0px;
     transform: scale(1.08);
   }
   .Location{
-    margin-top: 200px;
+    margin-top: 200em;
     width:90%;
     margin-left:auto;
     margin-right:auto;
     height: fit-content;
-    border-radius: 10px;
+    border-radius: 10em;
   }
 
-  .car{
+  /* .car{
     display: flex;
     position: relative;
+    }  */
 
-  }
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 768em) {
+    
+    
   .car{
     display: flex;
     position: relative;
@@ -98,19 +101,23 @@ margin-right: 0px;
     margin: auto;
   }
 .loh{
-  margin: auto;
-  margin-left:9px;
+  width:100%;
   display: block;
+  margin: auto;
+  
+  height:3vh;
+  
+
 }
 .image{
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
 }
 .left-arrow{
-  left: 2px;  
+  left: 2em;  
   }
   .right-arrow{
-    right: 2px;
+    right: 2em;
   } 
     
 }
@@ -119,32 +126,47 @@ margin-right: 0px;
   background-color:white;}
 .home{
   background-color:rgb(237, 252, 203);
-
+width:100vw;
+height:30em;
+margin-bottom:5em;
+}
+.BTC{
+  margin:auto;
 }
 .bu{
   text-decoration: none;
-  padding: 0.5em 0.1em 0.5em 0.1em;
-  border-radius: 1px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.1em;
   background-color: #320a3c;
   color: thistle;
   text-align: center;
   margin: auto;
-  margin-top: 5px; 
+  margin-top: 0.5em; 
+  width:20em;
 }
 .bu:hover{
   background-color: #681d6682;
   color: white;
   padding: 0.5em 0.5em 0.5em 0.5em;
-  border-radius: 2px;
-  text-align: center;
+  border-radius: 1em;
   margin: auto;
-  margin-top: 5px; 
+  margin-top: 0.5em; 
 }
 .hi:hover{
   color: #320a3c;
 
 }
 .hu{
-  padding: 2px;
+  padding: 2em;
  
+}
+.ho{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.pop{
+  height:12px;
 }

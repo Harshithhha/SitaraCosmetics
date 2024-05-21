@@ -2,9 +2,16 @@
     background-color: rgb(192, 255, 234);
 }
 .titlep{
-    font-size: 10em;
+    font-size: 5em;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     padding-top: 100px;
+
     ;
+}
+.titleq{
+    font-size: 2em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 10px;
 }

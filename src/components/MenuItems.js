@@ -35,12 +35,7 @@ export const MenuItems=[
         cName :"nav-links",
         icon:"fa-solid fa-circle-info"
     },
-    {
-        title:"Contact Us ",
-        url:"/Contact",
-        cName :"nav-links",
-        icon:"fa-solid fa-address-book"
-    },
+    
 
     
     // {

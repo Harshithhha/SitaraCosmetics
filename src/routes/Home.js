@@ -20,12 +20,16 @@ return(
 <Navbar/> 
 <div className="home">
 <div className="car">
-<Box bgColor={"faebd7"} w={"50vh"} h={"85vh"}>
+  
+<Box>
+
       <motion.div
         style={{
-    
-          height: "80vh",
           width: "40vh",
+          
+        margin:"auto",
+        marginTop: "21vh",
+          
         }}
         animate={{
           translateY: "20px",
@@ -41,23 +45,21 @@ return(
           objectFit={"contain"}
           src={btcSrc}
           alt={"BTC"}
-        ml={"600px"}
-        mt={"300"}
+     
         />
         </div>
       </motion.div>
 
      
     </Box>
-  {/* <div > <ImageSlider slides={SliderData} />
-  </div> */}
+
    </div>
    </div>
- <div className="products">
-     <div className="p">
+ 
          <Main />
          
-      </div>
+         
+     
         <div className="ourserv"><Text
         fontSize={"6xl"}
         textAlign={"center"}
@@ -71,6 +73,7 @@ return(
       {MenuItems.map((item,index)=>{
                       if (item.title!=="Contact" && item.title!=="Home" && item.title!=="Location"){
                         return(
+                          <center>
                       <div className="ho">
                         <ul key={index}>
                             <div className="bu">
@@ -81,11 +84,13 @@ return(
                             </div>
                         </ul>
                         </div>
+                        </center>
                         )
 }})}
       </div>
+      <div className="pop"></div>
       </div>
-</div>
+
 
 )
 }

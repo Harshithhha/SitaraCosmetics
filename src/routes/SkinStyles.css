@@ -28,3 +28,13 @@
 .pic2{
     width: 100%;
 }
+@media screen and (max-width: 850px) {
+    .titles{
+        font-size: 8em;
+    }
+    .ptitles{
+        font-size: 4em;
+    }
+
+
+}
